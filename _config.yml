@@ -21,8 +21,7 @@
 title: roastedchestnut
 email: blaze@yonsei.ac.kr
 description: >- # this means to ignore newlines until "baseurl:"
-  Mostly technical
-  Rarely personal
+  mostly technical, rarely personal
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
