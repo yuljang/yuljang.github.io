@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "SQL, NoSQL, and Scalability"
+title:  "SQL, NoSQL and Scalability"
 date:   2022-09-21 11:01:26 +0900
 categories: GDSC
 ---
