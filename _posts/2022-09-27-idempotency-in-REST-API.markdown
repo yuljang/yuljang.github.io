@@ -5,6 +5,8 @@ date:   2022-09-27 15:42:21 +0900
 categories: GDSC
 ---
 
+![Tim Berners-Lee](/assets/images/tim-berners-lee.jpg)
+
 [RFC 7231](https://www.rfc-editor.org/rfc/rfc7231#section-4.2) defines common method properties in HTTP and tells us which method has such properties. For the sake of simplicity, this post will only cover primary HTTP methods related to CRUD operation.
 
 
@@ -19,7 +21,7 @@ Only GET method is considered safe. POST and PUT sends request body and DELETE d
 
 > A request method is considered "idempotent" if the intended effect on the server of multiple identical requests with that method is the same as the effect for a single such request.
 
-Idempotent could be a bit confusing, so I'll give you an example. A constant function $f(x) = c$ is idempotent since $f(x) = f(f(x)) = ... = c$. Same goes for HTTP methods. If a method is considered idempotent, server should be same as it is after initial request, regardless how many times requested. 
+Idempotent could be a bit confusing, so I'll give you an example. A constant function $$ f(x) = c $$ is idempotent since $$ f(x) = f(f(x)) = \;...\;  = c $$. Same goes for HTTP methods. If a method is considered idempotent, server should be same as it is after initial request, regardless how many times requested. 
 
 The result of PUT method
 
@@ -72,3 +74,7 @@ Even though this property is listed as common method property, caching related t
 |  POST  	|  no  	|     no     	|
 |   PUT  	|  no  	|     yes    	|
 | DELETE 	|  no  	|     yes    	|
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
