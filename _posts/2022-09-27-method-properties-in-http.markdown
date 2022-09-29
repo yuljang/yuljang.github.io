@@ -7,7 +7,7 @@ categories: GDSC
 
 ![Tim Berners-Lee](/assets/images/tim-berners-lee.jpg)
 <p align = "center">
-Sir Tim Berners-Lee, the father of the World Wide Web
+Sir Tim Berners-Lee
 </p>
 
 [RFC 7231](https://www.rfc-editor.org/rfc/rfc7231#section-4.2) defines common method properties in HTTP and tells us which method has such properties. For the sake of simplicity, this post will only cover primary HTTP methods related to CRUD operation.
