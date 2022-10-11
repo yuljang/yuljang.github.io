@@ -19,7 +19,7 @@ Since open source established its concept in 1998, it has affected and contribut
 >
 > -- Michael Howard, CEO of MariaDB
 
-Their point is that big tech companies make profit providing services based on open source projects without contributing much of anything back to the community. To do so, they invetned licenses to replace popular open source licenses such as MIT License, Apache License or GPL(GNU General Public License). 
+Basically, their point is that big tech companies make profit providing services based on open source projects without contributing much of anything back to the community. To do so, they invetned licenses to replace popular open source licenses such as MIT License, Apache License or GPL(GNU General Public License). 
 
 For example, MongoDB changed its license from AGPL to SSPL. SSPL enforces user to make their entire source code available to the public in case of user selling service based on open source. It prevents big tech companies from strip-mining their project. 
 
