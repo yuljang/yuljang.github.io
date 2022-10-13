@@ -15,6 +15,8 @@ Similarly, both `is` and `==` exist in Python. In a nutshell, `is` compares obje
 
 Almost Everything in Python is an object: primitives, functions, methods... except some exceptions including keywords (e.g. `if`). If you declare two variables, they are two different objects referenceing difference values. I will skip about CPython's definition and implementation of an object. 
 
+## Examples
+
 I think I get it! So...
 
 ```python
@@ -28,7 +30,7 @@ True # What?
 
 Ah! I forgot to tell you that Python (technically, CPython) does "pre-allocation" for small integers ranging `[-5, 256]`. So if two variables' value is a same integer from -5 to 256, their references are same. 
 
-Alright, then for string..
+Alright, then for string...
 
 ```python
 >>> x = 'a'
@@ -41,7 +43,7 @@ True # Again?
 
 Sorry, I forgot another thing. Python interpreter also checks if the assigned value already exists in the heap. 
 
-Ok...
+Okay...
 
 ```python
 >>> x = 'thisisverylongstring!^^'
@@ -49,10 +51,11 @@ Ok...
 >>> x == y
 True
 >>> x is y
-False # Now it seems right...
+False # Why?
 ```
 
-There were few exceptions but everything seems right...?
+...and when the string is long and complicated enough, Python does not check.
+
 
 ```python
 >>> x = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
@@ -73,6 +76,12 @@ False # i = 3 ???
 False # i = 4 ???
 ```
 
-And there are A LOT more examples like these. Why this happens? That's tough question, but well, for performance I assume. When this happens? That's tougher question, and I can't really answer. If you really want to find out, you probably have to look at [CPython implementation source code](https://github.com/python/cpython/tree/main). In other words, these questions are not part of python itself, but it's implementation specific. If it's PyPy or Jython, the results of examples above may or may not be completely different. 
+There are a lot more examples like these. Why this happens? That's tough question, but well, for performance I assume. When this happens? That's tougher question, and I can't really answer. 
 
-Moral of the story: use `==` if you can, use `is` if you have to.
+If you really want to find out, you probably have to look at [CPython implementation source code](https://github.com/python/cpython/tree/main). In other words, these questions are not part of python itself, but it's implementation specific. If it's PyPy or Jython, the results of examples above may or may not be completely different. 
+
+## Moral of the Story
+
+Use `==` when you can. 
+
+Use `is` only when you have to.
