@@ -14,7 +14,7 @@ If you looked in to PHP in the past where there were bunch of PHP4 spaghetti cod
 However, what Laravel with modern PHP offers might surprise you.
 
 ## "Eloquent" ORM
-Yeah, many modern web frameworks also support ORM. But still, built-in ORM support for web framework is a nice thing to have. For example, like Flask, coding and configuration for SQLAlchemy integration is another pain in the neck (language!). By the way, this is motto of Laravel.
+Yeah, many modern web frameworks also support ORM. But still, built-in ORM support for web framework is a nice thing to have. For example, like Flask, installation and configuration for SQLAlchemy integration is another pain in the neck (language!). By the way, this is motto of Laravel.
 
 > Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.
 >
@@ -22,6 +22,32 @@ Yeah, many modern web frameworks also support ORM. But still, built-in ORM suppo
 
 ## Dependency Injection
 It is hard to call a web framework modern without dependency injection included. Laravel supports dependency injection with type-hinting! With a fact that PHP is known for its chaotic typing, it is definitely a big plus.
+
+## Cache
+It supports caching with Memcached or Redis. If you have experience implementing caching on top of DB, this counts as "Wow" factor. Look at this.
+
+```php
+<?php
+ 
+namespace App\Http\Controllers;
+ 
+use Illuminate\Support\Facades\Cache;
+ 
+class UserController extends Controller
+{
+    /**
+     * Show a list of all users of the application.
+     *
+     * @return Response
+     */
+    public function index()
+    {
+        $value = Cache::get('key');
+ 
+        //
+    }
+}
+```
 
 ## Lightweight
 With these "must have" functionalities, it still manages to keep itself simple and lightweight. In other words, it has limited built-in functionalities compared to Heavy web frameworks such as Django or Ruby on Rails. However, it's just point of view. I'll count this as a advantage.
