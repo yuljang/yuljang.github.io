@@ -13,7 +13,7 @@ categories: GDSC
 ## HTTP is stateless but...
 HTTP is stateless protocol which means that every HTTP request is independent and does not relate to each other. At first, and still most of the time today, it is very useful. It simplified and made so much easier to communicate. 
 However, modern web application requires connection between a server and a client. Without connection, the server is able to talk (send a data) only when client send a request. 
-There are other alternatives such as websocket, but people wanted implement connection in HTTP enviroment.
+There are other alternatives such as HTML5 Websocket nowadays, but it was needed implement connection in HTTP environment at that time.
 
 
 ## Polling
