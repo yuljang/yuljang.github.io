@@ -1,0 +1,35 @@
+---
+layout: single
+title:  Lambda 101
+date:   2022-11-15 15:31:22 +0900
+categories: GDSC
+---
+
+## Introduction
+
+When someone says "labmda", most of developers would think about AWS's serverless solution  
+
+![AWS Lambda](/assets/images/aws-lambda.png)
+<p align = "center">
+</p>
+
+... or Python's anonymous function.  
+
+![Python Lambda function](/assets/images/python-lambda.png)
+<p align = "center">
+</p>
+
+Where did those "lambda"s in their names come from? Well, of course from Greek alphabet (Λ λ), but you don't name important thing random Greek alphabet. ...unless you do.  
+Anyway, it all started from 1930s by mathematician named Alonzo Church.
+
+## Lambda Calculus
+Mr. Church came up with a mathematically formal system called lambda calculus. It was a pure mathematical concept when it came out. It's pretty obvious since it was from 1930s, way ahead of the first invention of modern computer. It's kind of surprising considering how widely its concept is used in modern computer science.  
+The system is equivalent to universal turing machine which means that lambda calculus itself is a programming language. 
+
+## So what is it?
+Lambda calculus in a nutshell: **Everything is function**  
+Everything literally means everything. Name, function, application (of function), number (0, 1, 2, 3...), conditions (true, false) are all represented as a function.  
+
+![Lambda Definition](/assets/images/lambda-def.png)
+<p align = "center">
+</p>
