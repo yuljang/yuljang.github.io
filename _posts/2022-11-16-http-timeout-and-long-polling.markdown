@@ -23,9 +23,8 @@ What they found to handle this was...
 
 
 ## Timeout
-There is a timeout for every HTTP request. If timeout is set 100 seconds, 100 seconds without response results in 408 timeout error. People did not focus on error. They focused on "100 seconds". In other words, the client who sent HTTP request keeps the connection alive waiting response from the server. It basically makes a client a server during timeout period.
+There is a timeout for every HTTP request. If timeout is set 100 seconds, 100 seconds without response results in 408 timeout error. People did not focus on error. They focused on "100 seconds". In other words, the client who sent HTTP request keeps the connection alive waiting response from the server. It basically makes the client a "server" during timeout period.
 
 
 ## Long Polling
-In long polling, a client sends a request to a server. And the server doesn't respond immediately but waits untl timeout occurs (or send some arbitrary response that says nothing). Then a client make anothe r request and repeat. This technique significantly reduced overhead. From few request a second to a request to 100~ seconds.
-
+In long polling, a client sends a request to a server. And the server doesn't respond immediately but waits untl timeout occurs (or send some arbitrary response that says nothing). Then the client make another request and repeat. This technique significantly reduced overhead as much as from few request a second to a request to 100~ seconds.
