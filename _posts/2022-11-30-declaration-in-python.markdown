@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Declaration" in Python
+title:  "\"Declaration\" in Python"
 date:   2022-11-30 23:19:40 +0900
 categories: GDSC
 ---
